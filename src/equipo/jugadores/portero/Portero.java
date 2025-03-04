@@ -1,12 +1,16 @@
 package equipo.jugadores.portero;
 
+import equipo.jugadores.Jugador;
+
 public class Portero extends Jugador{
 	
 	
 	private int paradas;
 
-	public Portero(int paradas) {
-		super();
+	
+
+	public Portero(String nombre, int dorsal, String equipo, int paradas) {
+		super(nombre, dorsal, equipo);
 		this.paradas = paradas;
 	}
 
@@ -17,7 +21,15 @@ public class Portero extends Jugador{
 	public void setParadas(int paradas) {
 		this.paradas = paradas;
 	}
+
+	@Override
+	public void mostrarDatos() {
+		System.out.println(super.toString() + ", Paradas: " + this.paradas);
+
+}
+		
+	}
 	
 	
 
-}
+
