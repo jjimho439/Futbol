@@ -50,6 +50,7 @@ public abstract class Jugador {
 		if (obj == null || getClass() != obj.getClass())
 			return false;
 		Jugador jugador = (Jugador) obj;
-		return dorsal == jugador.dorsal && nombre.equals(jugador.nombre);
+		return this.dorsal == jugador.dorsal && this.nombre.equals(jugador.nombre);
+		 
 	}
 }

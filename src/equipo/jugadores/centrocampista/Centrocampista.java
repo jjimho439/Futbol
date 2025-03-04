@@ -14,4 +14,6 @@ abstract class Centrocampista extends Jugador {
 	public String toString() {
 		return super.toString() + ", Pases Completados: " + pasesCompletados;
 	}
+	
+	
 }

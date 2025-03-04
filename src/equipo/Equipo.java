@@ -24,4 +24,12 @@ public class Equipo {
 			System.out.println(i + ": " + jugadores[i].toString());
 		}
 	}
+
+	public Jugador[] getJugadores() {
+		return jugadores;
+	}
+
+	public void setJugadores(Jugador[] jugadores) {
+		this.jugadores = jugadores;
+	}
 }

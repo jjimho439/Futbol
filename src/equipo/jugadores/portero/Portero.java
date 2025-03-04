@@ -2,7 +2,7 @@ package equipo.jugadores.portero;
 
 import equipo.jugadores.Jugador;
 
-abstract class Portero extends Jugador{
+public class Portero extends Jugador{
 	
 	
 	private int paradas;
@@ -26,6 +26,7 @@ abstract class Portero extends Jugador{
 		System.out.println(super.toString() + ", Paradas: " + this.paradas);
 
 }
+	
 	
 	
 
