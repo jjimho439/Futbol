@@ -2,9 +2,16 @@ package equipo.jugadores.centrocampista;
 
 import equipo.jugadores.Jugador;
 
-public class Centrocampista extends Jugador{
+abstract class Centrocampista extends Jugador {
 	private int pasesCompletados;
-	
-	Centrocampista(String nombre, int dorsal, String equipo) {
+
+	public Centrocampista(String nombre, int dorsal, String equipo, int pasesCompletados) {
+		super(nombre, dorsal, equipo);
+		this.pasesCompletados = pasesCompletados;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + ", Pases Completados: " + pasesCompletados;
 	}
 }
