@@ -5,9 +5,9 @@ import equipo.jugadores.Jugador;
 public class Equipo {
 	private Jugador[] jugadores = new Jugador[11];
 
-	public void aÒadirJugador(Jugador jugador, int posicion) {
+	public void a√±adirJugador(Jugador jugador, int posicion) {
 		if (posicion < 0 || posicion >= 11) {
-			throw new IndexOutOfBoundsException("PosiciÛn inv·lida");
+			throw new IndexOutOfBoundsException("Posici√≥n inv√°lida");
 		}
 		jugadores[posicion] = jugador;
 	}

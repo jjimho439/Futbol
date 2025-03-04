@@ -1,6 +1,6 @@
 package equipo.jugadores.portero;
 
-public class Portero {
+public class Portero extends Jugador{
 	
 	
 	private int paradas;
