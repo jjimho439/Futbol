@@ -47,7 +47,7 @@ abstract class Jugador {
 	
 	
 	
-	public abstract  void mostrarDatos();
+	public abstract void mostrarDatos();
 	
 
 	
