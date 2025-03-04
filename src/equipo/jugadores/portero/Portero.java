@@ -27,6 +27,8 @@ public class Portero extends Jugador{
 		System.out.println(super.toString() + ", Paradas: " + this.paradas);
 
 }
+	
+	
 		
 	}
 	

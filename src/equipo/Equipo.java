@@ -3,7 +3,11 @@ package equipo;
 import equipo.jugadores.Jugador;
 
 public class Equipo {
-	private Jugador[] jugadores = new Jugador[11];
+	private Jugador[] jugadores;
+
+	public Equipo() {
+		this.jugadores = new Jugador[11];
+	}
 
 	public void añadirJugador(Jugador jugador, int posicion) {
 		if (posicion < 0 || posicion >= 11) {
