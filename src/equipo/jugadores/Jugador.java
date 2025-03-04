@@ -1,6 +1,6 @@
 package equipo.jugadores;
 
-abstract class Jugador {
+public abstract class Jugador {
 	
 	private String nombre;
 	private int dorsal;
@@ -8,7 +8,7 @@ abstract class Jugador {
 	
 	
 	public Jugador(String nombre, int dorsal, String equipo) {
-		super();
+	
 		this.nombre = nombre;
 		this.dorsal = dorsal;
 		this.equipo = equipo;
