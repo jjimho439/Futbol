@@ -12,7 +12,8 @@ abstract class Delantero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Goles: " + goles);
+		
+		System.out.println("Posición: Delantero "+super.toString() + ", Goles: " + this.goles);
 	}
 
 	@Override

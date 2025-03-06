@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import equipo.Equipo;
 import equipo.jugadores.Jugador;
 import equipo.jugadores.centrocampista.Mediapunta;
@@ -33,24 +35,52 @@ public class Main {
          
            
         
+//
+//           equipo.mostrarAlineacion();
+//           
+//         for (Jugador j : equipo.getJugadores()) {
+//        	 j.mostrarDatos();
+//         }
+//           
+//           
+//           System.out.println("Comparando portero1 con portero2:");
+//          if ( equipo.equals(equipo)) {
+//        	  System.out.println("El jugador está repetido");
+//          }else {
+//        	  System.out.println("No hay jugadores repetidos");
+//          } 
+//           
+            Scanner sc = new Scanner(System.in);
+           int opcion;
 
-           equipo.mostrarAlineacion();
-           
-         for (Jugador j : equipo.getJugadores()) {
-        	 j.mostrarDatos();
-         }
-           
-           
-           System.out.println("Comparando portero1 con portero2:");
-          if ( equipo.equals(equipo)) {
-        	  System.out.println("El jugador está repetido");
-          }else {
-        	  System.out.println("No hay jugadores repetidos");
-          } 
-           
-           
+           do {
+               System.out.println("\n--- Menú de  Jugadores ---");
+               System.out.println("1. Añadir juador");
+               System.out.println("2. Muestrame la alineación");
+               System.out.println("3. Salir");
+               System.out.print("Elige una opción: ");
+               opcion = sc.nextInt();
+
+               switch (opcion) {
+                   case 1:
+                       
+                       break;
+                   case 2:
+                	   System.out.println("Muestrame la alineación");
+                       equipo.mostrarAlineacion();
+                       break;
+                   case 3:
+                       System.out.println("Saliendo del programa...");
+                       break;
+                   default:
+                       System.out.println("Opción no válida. Intenta de nuevo.");
+               }
+           } while (opcion != 3);
+
           
 	
+           
+           
 }
 				
 	}

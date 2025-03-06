@@ -10,8 +10,11 @@ public class Pivote extends Centrocampista {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Posición: Pivote, Intercepciones: " + intercepciones);
-	}
+		
+		System.out.println("PosiciÃ³n: Pivote "+super.toString() + ", Intercepciones: " + intercepciones);
+		}
+
+	
 
 	@Override
 	public boolean equals(Object obj) {

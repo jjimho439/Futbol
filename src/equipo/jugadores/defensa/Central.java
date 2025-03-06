@@ -19,7 +19,8 @@ public class Central extends Defensa {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Entradas : " + this.entradas);
+		
+		System.out.println("Posición: Central "+super.toString() + ", Entradas: " + this.entradas);
 	}
 
 	@Override

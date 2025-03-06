@@ -10,7 +10,7 @@ public class Mediapunta extends Centrocampista {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println("Posición: Mediapunta "+super.toString() + ", Asistencias: " + asistencias);
+		System.out.println("PosiciÃ³n: Mediapunta "+super.toString() + ", Asistencias: " + asistencias);
 	}
 
 	

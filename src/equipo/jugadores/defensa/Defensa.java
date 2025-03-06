@@ -22,8 +22,11 @@ public abstract class Defensa extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Disputas realizadas: " + this.disputasRealizadas);
-	}
+		
+		System.out.println("Posición: Defensa "+super.toString() + ", Disputas realizadas: " + this.disputasRealizadas);
+		}
+
+	
 
 	@Override
 	public boolean equals(Object obj) {

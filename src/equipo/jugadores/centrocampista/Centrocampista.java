@@ -12,8 +12,11 @@ abstract class Centrocampista extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Pases Completados: " + pasesCompletados); 
-	}
+		
+		System.out.println("Posición: Centrocampista "+super.toString() + ",Pases completados: " + pasesCompletados);
+		}
+
+	
 
 	
 	

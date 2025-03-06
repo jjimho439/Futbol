@@ -10,7 +10,8 @@ public class DelanteroCentro extends Delantero {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Posici�n: Delantero Centro, Goles de Penalti: " + golesDePenalti);
+		
+		System.out.println("Posición: Delantero Centro "+super.toString() + ", Goles de Penalti: " + this.golesDePenalti);
 	}
 
 

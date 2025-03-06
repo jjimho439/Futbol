@@ -22,7 +22,8 @@ public class Portero extends Jugador {
 	@Override
 
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Paradas: " + this.paradas);
+		
+		System.out.println("Posición: Portero "+super.toString() + ", Paradas: " + this.paradas);
 
 	}
 

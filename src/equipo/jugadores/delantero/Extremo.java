@@ -12,7 +12,8 @@ public class Extremo extends Delantero {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Posici�n: Extremo " + puesto);
+		
+		System.out.println("Posición: Extremo "+super.toString() + ", Puesto : " + this.puesto);
 	}
 
 	
