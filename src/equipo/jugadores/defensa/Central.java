@@ -1,5 +1,7 @@
 package equipo.jugadores.defensa;
 
+import java.util.Objects;
+
 public class Central extends Defensa{
 	
 	
@@ -23,6 +25,21 @@ public class Central extends Defensa{
 	public void mostrarDatos() {
 		System.out.println(super.toString() + ", Entradas : " + this.entradas);
 	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Central other = (Central) obj;
+		return entradas == other.entradas;
+	}
 	
 
+	
 }

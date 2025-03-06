@@ -1,5 +1,7 @@
 package equipo.jugadores.delantero;
 
+import java.util.Objects;
+
 public class DelanteroCentro extends Delantero {
 	private int golesDePenalti;
 
@@ -10,6 +12,21 @@ public class DelanteroCentro extends Delantero {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Posición: Delantero Centro, Goles de Penalti: " + golesDePenalti);
+		System.out.println(super.toString() + ", Posiciï¿½n: Delantero Centro, Goles de Penalti: " + golesDePenalti);
 	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DelanteroCentro other = (DelanteroCentro) obj;
+		return golesDePenalti == other.golesDePenalti;
+	}
+	
+	
 }

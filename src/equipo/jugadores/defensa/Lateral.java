@@ -1,5 +1,7 @@
 package equipo.jugadores.defensa;
 
+import java.util.Objects;
+
 public class Lateral extends Defensa{
 	
 	String puesto;
@@ -24,4 +26,21 @@ public class Lateral extends Defensa{
 		System.out.println(super.toString() + ", Puesto: " + this.puesto);
 
 }
+
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Lateral other = (Lateral) obj;
+		return Objects.equals(puesto, other.puesto);
+	}
+	
+	
+	
+	
 }
