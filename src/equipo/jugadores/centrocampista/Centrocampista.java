@@ -5,6 +5,15 @@ import equipo.jugadores.Jugador;
 abstract class Centrocampista extends Jugador {
 	private int pasesCompletados;
 
+
+	public int getPasesCompletados() {
+		return pasesCompletados;
+	}
+
+	public void setPasesCompletados(int pasesCompletados) {
+		this.pasesCompletados = pasesCompletados;
+	}
+
 	public Centrocampista(String nombre, int dorsal, String equipo, int pasesCompletados) {
 		super(nombre, dorsal, equipo);
 		this.pasesCompletados = pasesCompletados;
@@ -25,15 +34,14 @@ abstract class Centrocampista extends Jugador {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		
-		if (!super.equals(obj))
-			return false;
-		
 		if (getClass() != obj.getClass())
 			return false;
-		
+		Boolean iguales = false;
 		Centrocampista other = (Centrocampista) obj;
-		return pasesCompletados == other.pasesCompletados;
+		if (super.equals(other) && this.pasesCompletados == other.pasesCompletados) {
+			iguales = true;
+		}
+		return iguales;
 	}
 	
 	

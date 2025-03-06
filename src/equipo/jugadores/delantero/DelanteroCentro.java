@@ -19,12 +19,14 @@ public class DelanteroCentro extends Delantero {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		DelanteroCentro other = (DelanteroCentro) obj;
-		return golesDePenalti == other.golesDePenalti;
+		if (super.equals(other) && this.getGoles() == other.getGoles()&& this.golesDePenalti == other.golesDePenalti) {
+			iguales = true;
+		}
+		return iguales;
 	}
 	
 	

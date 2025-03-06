@@ -24,7 +24,7 @@ public class Pivote extends Centrocampista {
 			return false;
 		Boolean iguales = false;
 		Pivote other = (Pivote) obj;
-		if (super.equals(other) && this.intercepciones == other.intercepciones) {
+		if (super.equals(other) && this.getPasesCompletados() == other.getPasesCompletados() &&this.intercepciones == other.intercepciones) {
 			iguales = true;
 		}
 		return iguales;

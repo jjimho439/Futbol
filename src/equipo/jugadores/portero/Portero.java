@@ -31,12 +31,14 @@ public class Portero extends Jugador {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Portero other = (Portero) obj;
-		return paradas == other.paradas;
+		if (super.equals(other) && this.paradas == other.paradas) {
+			iguales = true;
+		}
+		return iguales;
 	}
 
 }

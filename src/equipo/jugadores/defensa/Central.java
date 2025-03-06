@@ -27,12 +27,14 @@ public class Central extends Defensa {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Central other = (Central) obj;
-		return entradas == other.entradas;
+		if (super.equals(other) && this.getDisputasRealizadas() == other.getDisputasRealizadas()&& this.entradas == other.entradas) {
+			iguales = true;
+		}
+		return iguales;
 	}
 
 }

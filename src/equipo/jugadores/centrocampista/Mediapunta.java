@@ -18,12 +18,14 @@ public class Mediapunta extends Centrocampista {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Mediapunta other = (Mediapunta) obj;
-		return asistencias == other.asistencias;
+		if (super.equals(other) && this.getPasesCompletados() == other.getPasesCompletados() &&this.asistencias == other.asistencias) {
+			iguales = true;
+		}
+		return iguales;
 	}
 	
 	

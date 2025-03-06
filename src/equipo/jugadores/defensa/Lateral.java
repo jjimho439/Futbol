@@ -1,7 +1,5 @@
 package equipo.jugadores.defensa;
 
-import java.util.Objects;
-
 public class Lateral extends Defensa {
 
 	String puesto;
@@ -30,12 +28,14 @@ public class Lateral extends Defensa {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Lateral other = (Lateral) obj;
-		return Objects.equals(puesto, other.puesto);
+		if (super.equals(other) && this.getDisputasRealizadas() == other.getDisputasRealizadas()&& this.puesto == other.puesto) {
+			iguales = true;
+		}
+		return iguales;
 	}
 
 }

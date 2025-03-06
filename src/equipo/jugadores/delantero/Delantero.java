@@ -10,6 +10,14 @@ abstract class Delantero extends Jugador {
 		this.goles = goles;
 	}
 
+	public int getGoles() {
+		return goles;
+	}
+
+	public void setGoles(int goles) {
+		this.goles = goles;
+	}
+
 	@Override
 	public void mostrarDatos() {
 		
@@ -20,12 +28,14 @@ abstract class Delantero extends Jugador {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Delantero other = (Delantero) obj;
-		return goles == other.goles;
+		if (super.equals(other) && this.goles == other.goles) {
+			iguales = true;
+		}
+		return iguales;
 	}
 
 }

@@ -1,7 +1,5 @@
 package equipo.jugadores.delantero;
 
-import java.util.Objects;
-
 public class Extremo extends Delantero {
 	private String puesto;
 
@@ -22,12 +20,14 @@ public class Extremo extends Delantero {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Extremo other = (Extremo) obj;
-		return Objects.equals(puesto, other.puesto);
+		if (super.equals(other) && this.getGoles() == other.getGoles()&& this.puesto == other.puesto) {
+			iguales = true;
+		}
+		return iguales;
 	}
 	
 	

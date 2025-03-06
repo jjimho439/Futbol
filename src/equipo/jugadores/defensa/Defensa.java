@@ -32,12 +32,14 @@ public abstract class Defensa extends Jugador {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
+		Boolean iguales = false;
 		Defensa other = (Defensa) obj;
-		return disputasRealizadas == other.disputasRealizadas;
+		if (super.equals(other) && this.disputasRealizadas == other.disputasRealizadas) {
+			iguales = true;
+		}
+		return iguales;
 	}
 
 }
