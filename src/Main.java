@@ -17,29 +17,33 @@ public class Main {
 		   Equipo equipo = new Equipo();
 
            // Crear 11 jugadores
-           equipo.a√±adirJugador(new Portero("Iker Casillas", 1, "Real Madrid", 50), 1);
-           equipo.a√±adirJugador(new Lateral("Marcelo", 12, "Real Madrid", 30, "Izquierdo"), 2);
-           equipo.a√±adirJugador(new Central("Sergio Ramos", 4, "Real Madrid", 40, 20), 3);
-           equipo.a√±adirJugador(new Central("Pepe", 3, "Real Madrid", 35, 18), 4);
-           equipo.a√±adirJugador(new Lateral("Carvajal", 2, "Real Madrid", 25, "Derecho"), 5);
-           equipo.a√±adirJugador(new Pivote("Casemiro", 14, "Real Madrid", 50, 30), 6);
-           equipo.a√±adirJugador(new Pivote("Kroos", 8, "Real Madrid", 70, 10), 7);
-           equipo.a√±adirJugador(new Mediapunta("Modric", 10, "Real Madrid", 80, 25), 8);
-           equipo.a√±adirJugador(new Extremo("Vinicius Jr.", 20, "Real Madrid", 15, "Izquierdo"), 9);
-           equipo.a√±adirJugador(new Extremo("Rodrygo", 11, "Real Madrid", 12, "Derecho"), 10);
-           equipo.a√±adirJugador(new DelanteroCentro("Benzema", 9, "Real Madrid", 25, 8), 11);
-           equipo.a√±adirJugador(new Portero("Iker Casillas", 1, "Real Madrid", 50), 1);
+           equipo.aÒadirJugador(new Portero("Iker Casillas", 1, "Real Madrid", 50), 0);
+           equipo.aÒadirJugador(new Lateral("Marcelo", 12, "Real Madrid", 30, "Izquierdo"), 1);
+           equipo.aÒadirJugador(new Central("Sergio Ramos", 4, "Real Madrid", 40, 20), 2);
+           equipo.aÒadirJugador(new Central("Pepe", 3, "Real Madrid", 35, 18), 3);
+           equipo.aÒadirJugador(new Lateral("Carvajal", 2, "Real Madrid", 25, "Derecho"), 4);
+           equipo.aÒadirJugador(new Pivote("Casemiro", 14, "Real Madrid", 50, 30), 5);
+           equipo.aÒadirJugador(new Pivote("Kroos", 8, "Real Madrid", 70, 10), 6);
+           equipo.aÒadirJugador(new Mediapunta("Modric", 10, "Real Madrid", 80, 25), 7);
+           equipo.aÒadirJugador(new Extremo("Vinicius Jr.", 20, "Real Madrid", 15, "Izquierdo"), 8);
+           equipo.aÒadirJugador(new Extremo("Rodrygo", 11, "Real Madrid", 12, "Derecho"), 9);
+           equipo.aÒadirJugador(new DelanteroCentro("Benzema", 9, "Real Madrid", 25, 8), 10);
+           equipo.aÒadirJugador(new Portero("Iker Casillas", 1, "Real Madrid", 50), 0);
            
          
            
         
-           
+
            equipo.mostrarAlineacion();
+           
+         for (Jugador j : equipo.getJugadores()) {
+        	 j.mostrarDatos();
+         }
            
            
            System.out.println("Comparando portero1 con portero2:");
           if ( equipo.equals(equipo)) {
-        	  System.out.println("El jugador est√° repetido");
+        	  System.out.println("El jugador est· repetido");
           }else {
         	  System.out.println("No hay jugadores repetidos");
           } 

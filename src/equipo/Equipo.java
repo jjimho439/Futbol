@@ -6,22 +6,22 @@ public class Equipo {
 	private Jugador[] jugadores;
 
 	public Equipo() {
-		this.jugadores = new Jugador[12];
+		this.jugadores = new Jugador[11];
 	}
 
 	public void añadirJugador(Jugador jugador, int posicion) {
-		if (posicion < 1 || posicion >12) {
+		if (posicion < 0 || posicion >11) {
 			throw new IndexOutOfBoundsException("Posición inválida");
 		}
 		jugadores[posicion] = jugador;
 	}
 
 	public void mostrarAlineacion() {
-		for (int i = 1; i < jugadores.length; i++) {
+		for (int i = 0; i < jugadores.length; i++) {
 			if (jugadores[i] == null) {
 				throw new IllegalStateException("El jugador " +i+ " está vacío");
 			}
-			System.out.println(i + ": " + jugadores[i].toString());
+			System.out.println((i+1) + ": " + jugadores[i].toString());
 		}
 	}
 

@@ -45,10 +45,6 @@ public abstract class Jugador {
 		return "Nombre: " + nombre + ", Dorsal: " + dorsal + ", Equipo: " + equipo;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(dorsal, equipo, nombre);
-	}
 
 	@Override
 	public boolean equals(Object obj) {

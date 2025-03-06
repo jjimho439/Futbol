@@ -1,7 +1,5 @@
 package equipo.jugadores.delantero;
 
-import java.util.Objects;
-
 public class DelanteroCentro extends Delantero {
 	private int golesDePenalti;
 

@@ -1,12 +1,9 @@
 package equipo.jugadores.portero;
 
-import java.util.Objects;
-
 import equipo.jugadores.Jugador;
 
-public class Portero extends Jugador{
-	
-	
+public class Portero extends Jugador {
+
 	private int paradas;
 
 	public Portero(String nombre, int dorsal, String equipo, int paradas) {
@@ -27,8 +24,7 @@ public class Portero extends Jugador{
 	public void mostrarDatos() {
 		System.out.println(super.toString() + ", Paradas: " + this.paradas);
 
-}
-
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -41,11 +37,5 @@ public class Portero extends Jugador{
 		Portero other = (Portero) obj;
 		return paradas == other.paradas;
 	}
-	
-	
-	
 
-	}
-	
-
-
+}

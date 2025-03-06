@@ -1,12 +1,9 @@
 package equipo.jugadores.defensa;
 
-import java.util.Objects;
+public class Central extends Defensa {
 
-public class Central extends Defensa{
-	
-	
 	private int entradas;
-	
+
 	public Central(String nombre, int dorsal, String equipo, int disputasRealizadas, int entradas) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
 		this.entradas = entradas;
@@ -20,13 +17,10 @@ public class Central extends Defensa{
 		this.entradas = entradas;
 	}
 
-	
 	@Override
 	public void mostrarDatos() {
 		System.out.println(super.toString() + ", Entradas : " + this.entradas);
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -39,7 +33,5 @@ public class Central extends Defensa{
 		Central other = (Central) obj;
 		return entradas == other.entradas;
 	}
-	
 
-	
 }

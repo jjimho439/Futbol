@@ -1,7 +1,5 @@
 package equipo.jugadores.centrocampista;
 
-import java.util.Objects;
-
 public class Mediapunta extends Centrocampista {
 	private int asistencias;
 
@@ -12,7 +10,7 @@ public class Mediapunta extends Centrocampista {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(super.toString() + ", Posiciï¿½n: Mediapunta, Asistencias: " + asistencias);
+		System.out.println("Posición: Mediapunta "+super.toString() + ", Asistencias: " + asistencias);
 	}
 
 	
