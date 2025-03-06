@@ -1,3 +1,10 @@
+=\=\=\=\=\=\=
+<<<<<<<=Updated upstream
+>>>>>>>=Stashed changes
 eclipse.preferences.version=1
 encoding//src/Main.java=ISO-8859-1
 encoding//src/equipo/Equipo.java=ISO-8859-1
+encoding//src/equipo/jugadores/centrocampista/Centrocampista.java=UTF-8
+encoding//src/equipo/jugadores/defensa/Lateral.java=ISO-8859-1
+encoding//src/equipo/jugadores/delantero/DelanteroCentro.java=UTF-8
+encoding/<project>=UTF-8

@@ -13,13 +13,16 @@ public class Equipo {
 		if (posicion < 0 || posicion >11) {
 			throw new IndexOutOfBoundsException("Posición inválida");
 		}
+		if(jugador.equals(jugadores[posicion])) {
+			throw new IllegalArgumentException("Jugador Duplicado");
+		}
 		jugadores[posicion] = jugador;
 	}
 
 	public void mostrarAlineacion() {
 		for (int i = 0; i < jugadores.length; i++) {
 			if (jugadores[i] == null) {
-				throw new IllegalStateException("El jugador " +i+ " está vacío");
+				System.out.println("El jugador " +i+ " está vacío");
 			}
 			System.out.println((i+1) + ": " + jugadores[i].toString());
 		}
@@ -27,6 +30,9 @@ public class Equipo {
 
 	public Jugador[] getJugadores() {
 		return jugadores;
+	}
+	public Jugador getJugador(int i) {
+		return jugadores[i];
 	}
 
 	public void setJugadores(Jugador[] jugadores) {
