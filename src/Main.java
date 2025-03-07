@@ -58,7 +58,7 @@ public class Main {
 						System.out.println("Ingrese el nombre del jugador: ");
 						String nombre = sc.next();
 						System.out.println("Ingrese el dorsal del jugador: ");
-						int dorsal = Integer.parseInt(sc.next());
+						int dorsal = sc.nextInt();
 						System.out.println("Ingrese el equipo del jugador: ");
 						String equipoNombre = sc.next();
 
@@ -70,49 +70,49 @@ public class Main {
 							break;
 						case "lateral":
 							System.out.println("Ingrese el puesto (izquierdo/derecho): ");
-							String puestoLateral = sc.nextLine();
+							String puestoLateral = sc.next();
 							System.out.println("Ingrese el número de disputas realizadas: ");
-							int disputasLateral = Integer.parseInt(sc.nextLine());
+							int disputasLateral = sc.nextInt();
 							equipo.añadirJugador(
 									new Lateral(nombre, dorsal, equipoNombre, disputasLateral, puestoLateral), i);
 							break;
 						case "central":
 							System.out.println("Ingrese el número de disputas realizadas: ");
-							int disputasCentral = Integer.parseInt(sc.nextLine());
+							int disputasCentral = sc.nextInt();
 							System.out.println("Ingrese el número de entradas: ");
-							int entradas = Integer.parseInt(sc.nextLine());
+							int entradas = sc.nextInt();
 							equipo.añadirJugador(new Central(nombre, dorsal, equipoNombre, disputasCentral, entradas),
 									i);
 							break;
 						case "pivote":
 							System.out.println("Ingrese el número de pases completados: ");
-							int pasesPivote = Integer.parseInt(sc.nextLine());
+							int pasesPivote = sc.nextInt();
 							System.out.println("Ingrese el número de intercepciones: ");
-							int intercepciones = Integer.parseInt(sc.nextLine());
+							int intercepciones = sc.nextInt();
 							equipo.añadirJugador(new Pivote(nombre, dorsal, equipoNombre, pasesPivote, intercepciones),
 									i);
 							break;
 						case "mediapunta":
 							System.out.println("Ingrese el número de pases completados: ");
-							int pasesMediapunta = Integer.parseInt(sc.nextLine());
+							int pasesMediapunta = sc.nextInt();
 							System.out.println("Ingrese el número de asistencias: ");
-							int asistencias = Integer.parseInt(sc.nextLine());
+							int asistencias = sc.nextInt();
 							equipo.añadirJugador(
 									new Mediapunta(nombre, dorsal, equipoNombre, pasesMediapunta, asistencias), i);
 							break;
 						case "extremo":
 							System.out.println("Ingrese el puesto (izquierdo/derecho): ");
-							String puestoExtremo = sc.nextLine();
+							String puestoExtremo = sc.next();
 							System.out.println("Ingrese el número de goles: ");
-							int golesExtremo = Integer.parseInt(sc.nextLine());
+							int golesExtremo = sc.nextInt();
 							equipo.añadirJugador(new Extremo(nombre, dorsal, equipoNombre, golesExtremo, puestoExtremo),
 									i);
 							break;
 						case "delanterocentro":
 							System.out.println("Ingrese el número de goles: ");
-							int golesDelantero = Integer.parseInt(sc.nextLine());
+							int golesDelantero = sc.nextInt();
 							System.out.println("Ingrese el número de goles de penalti: ");
-							int golesDePenalti = Integer.parseInt(sc.nextLine());
+							int golesDePenalti = sc.nextInt();
 							equipo.añadirJugador(
 									new DelanteroCentro(nombre, dorsal, equipoNombre, golesDelantero, golesDePenalti),
 									i);
